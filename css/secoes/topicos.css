@@ -1,0 +1,39 @@
+.topicos-bg {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  border-bottom: 4px solid var(--cor-p3);
+}
+
+.topicos h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.topicos ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 120px 40px;
+}
+
+@media (max-width: 880px) {
+  .topicos ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+.topicos li a {
+  display: block;
+  background: #faf8f5;
+  position: relative;
+  max-width: 560px;
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+  border-radius: 4px;
+}
+
+.topicos li img {
+  position: absolute;
+  left: 45%;
+  top: -45px;
+}

@@ -1,0 +1,49 @@
+.trens {
+  padding-top: 120px;
+  padding-bottom: 200px;
+}
+
+.trens h3 {
+  text-align: end;
+  margin-bottom: 60px;
+}
+
+.trens h3::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin-top: 20px;
+  background: currentColor;
+}
+
+.trens-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.trens-content-group {
+  display: grid;
+  align-content: space-between;
+}
+
+@media (max-width: 1020px) {
+  .trens-content {
+    grid-template-columns: 1fr;
+  }
+
+  .trens-content-group {
+    gap: 40px;
+    justify-items: center;
+  }
+}
+
+.trens-content-text {
+  background: var(--cor-p1);
+  padding: 32px 32px 80px 32px;
+}
+
+.trens-content-text p + p {
+  margin-top: 40px;
+}

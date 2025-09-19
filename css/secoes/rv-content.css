@@ -1,0 +1,25 @@
+.rv-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 200px;
+}
+
+.rv-text {
+  background: var(--cor-p1);
+  padding: 40px 40px 80px 40px;
+  margin-top: 80px;
+}
+
+@media (max-width: 880px) {
+  .rv-content {
+    grid-template-columns: 1fr;
+  }
+
+  .rv-text {
+    order: 1;
+    margin-top: 0px;
+    padding: 28px 20px 40px 20px;
+  }
+}

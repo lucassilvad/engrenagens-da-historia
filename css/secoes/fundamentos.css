@@ -1,0 +1,43 @@
+.fundamentos {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.fundamentos h3 {
+  text-align: right;
+  max-width: 660px;
+  justify-self: end;
+  margin-bottom: 80px;
+}
+
+.fundamentos ul {
+  text-align: center;
+}
+
+.fundamentos li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .fundamentos li {
+    grid-template-columns: 1fr;
+  }
+  .fundamentos li:nth-child(2) div:last-child {
+    order: -1;
+  }
+}
+
+.fundamentos li + li {
+  margin-top: 80px;
+}
+
+.fundamentos li img {
+  border-radius: 40px;
+}
+
+.fundamentos h4 {
+  margin-bottom: 28px;
+}

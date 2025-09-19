@@ -1,0 +1,66 @@
+.sociedade-a {
+  margin-bottom: 120px;
+}
+
+.sociedade-a-titulo {
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.sociedade-a-titulo h3 {
+  position: absolute;
+  justify-self: center;
+  top: 80px;
+}
+
+.sociedade-a-titulo h3::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: var(--cor-1);
+}
+
+@media (max-width: 880px) {
+  .sociedade-a-bg {
+    /* width: 100px; */
+    background: center / cover
+      url("../../img/sociedade-antes/sociedade-antes-bg.jpg");
+  }
+
+  .sociedade-a-titulo img {
+    display: none;
+  }
+
+  .sociedade-a-titulo h3 {
+    position: static;
+    padding: 100px 0px;
+  }
+}
+
+.sociedade-lista-text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.sociedade-lista-text li {
+  background: var(--cor-p1);
+  padding: 32px 24px;
+  flex: 1;
+  min-width: 240px;
+  cursor: pointer;
+}
+
+.sociedade-lista-img li {
+  display: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.sociedade-lista-img li.active {
+  display: block;
+  position: static;
+  opacity: 1;
+}

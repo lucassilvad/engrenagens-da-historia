@@ -1,0 +1,64 @@
+.intro-bg {
+  background: center / cover url("../../img/intro/intro-bg.jpg");
+}
+
+.intro {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 220px;
+}
+
+.intro h1 {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+/* Intro Decoração */
+
+.intro h1::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: #f2cea2;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.intro h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("../../img/intro/engrenagem.svg");
+  top: -100px;
+  rotate: -45deg;
+}
+
+.intro-deco {
+  position: relative;
+}
+
+.intro-deco img {
+  position: absolute;
+}
+
+.intro-deco img:first-child {
+  rotate: -75deg;
+  top: 50px;
+  left: 150px;
+}
+
+.intro-deco img:last-child {
+  rotate: -45deg;
+  top: -20px;
+  right: 120px;
+}
+
+@media (max-width: 1000px) {
+  .intro h1::before,
+  .intro-deco {
+    display: none;
+  }
+}

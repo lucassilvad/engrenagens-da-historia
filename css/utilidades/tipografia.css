@@ -1,0 +1,61 @@
+.font-1-xxl {
+  font: italic 700 5rem/1 "Cormorant", serif;
+}
+
+.font-1-xl {
+  font: italic 700 4rem/1.125 "Cormorant", serif;
+}
+
+.font-1-l {
+  font: italic 700 3rem/1.25 "Cormorant", serif;
+}
+
+.font-3-l {
+  font: 600 3rem/1.25 "Source Sans 3", sans-serif;
+}
+
+.font-3-m {
+  font: 600 2.5rem/1 "Source Sans 3", sans-serif;
+}
+
+.font-2-m {
+  font: 400 2rem/1.25 "Yrsa", serif;
+}
+
+.font-2-ms {
+  font: 400 1.375rem/1.25 "Yrsa", serif;
+}
+
+.font-3-ms {
+  font: 400 2rem/1.25 "Source Sans 3", sans-serif;
+}
+
+.font-3-s {
+  font: 400 1.125rem/1.4 "Source Sans 3", sans-serif;
+}
+
+@media (max-width: 440px) {
+  .font-1-xxl {
+    font: italic 700 3.5rem/1 "Cormorant", serif;
+  }
+
+  .font-1-xl {
+    font: italic 700 3rem/1.25 "Cormorant", serif;
+  }
+
+  .font-1-l {
+    font: italic 700 2rem/1.25 "Cormorant", serif;
+  }
+
+  .font-2-m {
+    font: 400 1.25rem/1.25 "Yrsa", serif;
+  }
+
+  .font-2-ms {
+    font: 400 1.25rem/1.2 "Yrsa", serif;
+  }
+
+  .font-3-ms {
+    font: 400 1.5rem/1.2 "Source Sans 3", sans-serif;
+  }
+}

@@ -1,0 +1,23 @@
+.legado {
+  padding-bottom: 200px;
+}
+
+.legado-titulo {
+  background: center / cover url("../../img/legando-bg.jpg");
+  padding-top: 120px;
+  padding-bottom: 160px;
+  margin-bottom: 80px;
+}
+
+.legado-titulo h3 {
+  text-align: center;
+}
+
+.legado-content-text {
+  background: var(--cor-p1);
+  padding: 60px 60px 120px 60px;
+}
+
+.legado-content-text p + p {
+  margin-top: 40px;
+}

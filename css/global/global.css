@@ -1,0 +1,24 @@
+body {
+  background: url("../../img/site-bg.jpg");
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+a {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
