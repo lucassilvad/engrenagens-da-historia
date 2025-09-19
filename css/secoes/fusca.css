@@ -15,6 +15,7 @@
   display: grid;
   grid-template-columns: 1.5fr 8fr 1.5fr;
   align-items: center;
+  justify-items: center;
   gap: 60px;
 }
 
@@ -26,6 +27,10 @@
 .setas,
 .setas-2 {
   cursor: pointer;
+}
+
+.setas {
+  width: 80px;
 }
 
 .fusca-imagens-lista li {
