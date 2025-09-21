@@ -24,7 +24,7 @@
 }
 
 .topicos .topicos-lista > li {
-  display: block;
+  display: grid;
   background: #faf8f5;
   position: relative;
   max-width: 560px;
@@ -34,7 +34,7 @@
 
 .topicos .topicos-lista > li > img {
   position: absolute;
-  left: 45%;
+  justify-self: center;
   top: -45px;
 }
 
@@ -46,12 +46,19 @@
 /* Item Tópicos Accordion */
 
 .item-topico-accordion {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  padding: 40px 20px 20px 20px;
 }
 
 .item-topico-accordion.active {
   display: grid;
-  padding: 40px 20px 20px 20px;
+  opacity: 1;
+  position: static;
+  max-height: 660px;
 }
 
 .item-topico-lista {
