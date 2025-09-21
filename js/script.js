@@ -25,9 +25,6 @@ elementosAtivadores.forEach((item, index) => {
   });
 });
 
-console.log(elementosAtivadores);
-console.log(elementosParaAtivar);
-
 // Fotos troca
 
 // Seleção de Elementos
@@ -47,7 +44,6 @@ const mudarImagem = (index) => {
 };
 
 let numeroFoto1 = 0;
-console.log(numeroFoto1);
 
 const avançarImagem = () => {
   if (numeroFoto1 <= imagemLista1.length - 1) numeroFoto1 = numeroFoto1 + 1;
@@ -72,3 +68,47 @@ setaMais1.forEach((item) => {
 setaMenos1.forEach((item) => {
   item.addEventListener("click", voltarImagem);
 });
+
+// Abrir Tópico
+
+// Seleção de Itens
+
+const topicoItem = document.querySelectorAll(".topicos-lista > li p");
+const topicoItemAccordion = document.querySelectorAll(".item-topico-accordion");
+
+const ativarAccordion = (index) => {
+  topicoItemAccordion[index].classList.toggle(activeClass);
+};
+
+topicoItem.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    ativarAccordion(index);
+  });
+});
+
+// Riscar Item
+
+// Seleção de Elementos
+
+const itemTopicoLista = document.querySelectorAll(".item-topico-lista li");
+
+const riscarItem = (event) => {
+  event.currentTarget.classList.toggle(activeClass);
+};
+
+itemTopicoLista.forEach((item) => {
+  item.addEventListener("click", riscarItem);
+});
+
+import ScrollSuave from "./modules/scroll-suave.js";
+import MoveToSection from "./modules/move-to-section.js";
+
+const scrollSuave = new ScrollSuave("[data-secao-link]");
+scrollSuave.init();
+
+const moveToSection = new MoveToSection(".topicos-bg", {
+  block: "start",
+  inline: "nearest",
+  behavior: "smooth",
+});
+moveToSection.init();
