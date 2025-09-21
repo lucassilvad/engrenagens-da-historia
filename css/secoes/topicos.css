@@ -9,31 +9,80 @@
   margin-bottom: 80px;
 }
 
-.topicos ul {
+.topicos .topicos-lista {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+  align-items: start;
   gap: 120px 40px;
 }
 
 @media (max-width: 880px) {
-  .topicos ul {
+  .topicos .topicos-lista {
     grid-template-columns: 1fr;
   }
 }
 
-.topicos li {
+.topicos .topicos-lista > li {
   display: block;
   background: #faf8f5;
   position: relative;
   max-width: 560px;
-  text-align: center;
   padding: 40px 20px 20px 20px;
   border-radius: 4px;
 }
 
-.topicos li img {
+.topicos .topicos-lista > li > img {
   position: absolute;
   left: 45%;
   top: -45px;
+}
+
+.topicos .topicos-lista > li p {
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Item Tópicos Accordion */
+
+.item-topico-accordion {
+  display: none;
+}
+
+.item-topico-accordion.active {
+  display: grid;
+  padding: 40px 20px 20px 20px;
+}
+
+.item-topico-lista {
+  margin-bottom: 40px;
+}
+
+.item-topico-lista li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.item-topico-lista li.active {
+  text-decoration: line-through;
+}
+
+.item-topico-lista li + li {
+  margin-top: 12px;
+}
+
+.item-topico-lista li::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 5px;
+  background: var(--cor-p5);
+  align-self: center;
+  margin-bottom: 4px;
+}
+
+.item-topico-accordion a {
+  justify-self: center;
 }

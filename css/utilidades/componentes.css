@@ -20,3 +20,10 @@
   background: var(--cor-1);
   box-shadow: inset 0px 0px 16px rgba(36, 19, 3, 0.35);
 }
+
+.no-selection {
+  user-select: none; /* Para navegadores modernos */
+  -webkit-user-select: none; /* Para Chrome, Safari, Opera */
+  -moz-user-select: none; /* Para Firefox */
+  -ms-user-select: none; /* Para Internet Explorer/Edge */
+}
