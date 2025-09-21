@@ -22,7 +22,7 @@
   }
 }
 
-.topicos li a {
+.topicos li {
   display: block;
   background: #faf8f5;
   position: relative;
