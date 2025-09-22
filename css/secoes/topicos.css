@@ -54,11 +54,19 @@
   padding: 40px 20px 20px 20px;
 }
 
+.item-topico-accordion li {
+  pointer-events: none;
+}
+
 .item-topico-accordion.active {
   display: grid;
   opacity: 1;
   position: static;
   max-height: 660px;
+}
+
+.item-topico-accordion.active li {
+  pointer-events: all;
 }
 
 .item-topico-lista {
