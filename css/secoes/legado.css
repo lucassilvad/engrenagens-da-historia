@@ -18,6 +18,12 @@
   padding: 60px 60px 120px 60px;
 }
 
+@media (max-width: 500px) {
+  .legado-content-text {
+    padding: 24px 24px 60px 24px;
+  }
+}
+
 .legado-content-text p + p {
   margin-top: 40px;
 }
