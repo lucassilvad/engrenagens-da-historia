@@ -112,3 +112,20 @@ const moveToSection = new MoveToSection(".topicos-bg", {
   behavior: "smooth",
 });
 moveToSection.init();
+
+// Troca imagens motor
+
+// Elementos
+
+const imagensMotor = document.querySelectorAll(".motor-lista-img img");
+
+const trocarFoto = (numeroImagem) => {
+  imagensMotor.forEach((item) => item.classList.add(activeClass));
+  imagensMotor[numeroImagem].classList.remove(activeClass);
+};
+
+imagensMotor.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    trocarFoto(index);
+  });
+});

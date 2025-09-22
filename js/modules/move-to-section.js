@@ -16,8 +16,6 @@ export default class MoveToSection {
   }
 
   init() {
-    console.log("teste");
     this.addEvent();
-    console.log(this.section);
   }
 }
